@@ -23,6 +23,17 @@ This project provides an AWS Lambda function written in Python that automates th
 - IAM role with permissions for Lambda to list and delete snapshots and describe instances.  
 
 ## Deployment Instructions
-1. Clone this repository:  
-   ```bash
-   git clone https://github.com/your-username/ebs-snapshot-cleanup.git
+- Package and deploy the Lambda function using AWS CLI or AWS Console.  
+- Attach an IAM role with the necessary permissions to the Lambda function.  
+- Set up a CloudWatch Event (EventBridge) rule to trigger the Lambda on a schedule (e.g., daily).
+
+## Usage
+- Monitor Lambda execution and logs in AWS CloudWatch to verify snapshot cleanup operations.  
+- Adjust trigger schedule and cleanup logic as needed for your environment.
+
+## Technologies Used
+- AWS Lambda  
+- Python 3.x  
+- boto3  
+- AWS IAM  
+- AWS CloudWatch  
